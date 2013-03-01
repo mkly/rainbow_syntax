@@ -16,8 +16,8 @@ class DashboardRainbowSyntaxSettingsController extends DashboardBaseController
 {
     public function view()
     {
-        $this->set('dh'       , Loader::helper('concrete/dashboard'));
-        $this->set('ih'       , Loader::helper('concrete/interface'));
+        $this->set('dh'           , Loader::helper('concrete/dashboard'));
+        $this->set('ih'           , Loader::helper('concrete/interface'));
         $this->set('RainbowSyntax', new RainbowSyntax);
     }
 
