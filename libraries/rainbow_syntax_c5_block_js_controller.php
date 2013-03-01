@@ -46,8 +46,16 @@ class RainbowSyntaxC5BlockJsController extends BlockController
     {
         $blockData           = new StdClass;
 
-        $blockControllerData = $this->getBlockControllerData();
-        $attributeNames      = $blockControllerData->getAttributeNames();
+         /**
+         * @todo
+         * We are just avoiding block record caching right now
+         * because we don't appear to be getting a fully functional
+         * ADODB_Active_Record obj from it
+         */
+        $blockRecord = new BlockRecord($this->getBlockTypeDatabaseTable());
+        $blockRecord->Load('bID=?', $this->bID);
+
+        $attributeNames = $blockRecord->GetAttributeNames();
         foreach ($attributeNames as $key) {
             $blockData->{$key} = $blockControllerData->{$key};
         }
