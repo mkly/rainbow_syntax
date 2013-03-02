@@ -6,7 +6,7 @@
  *
  * @author    Mike Lay
  * @copyright 2013 Mike Lay
- * @link      http://github.com/mkly/c5_addon_rainbow_syntax
+ * @link      http://github.com/mkly/rainbow_syntax
  * @license   Apache 2.0
  * @package   RainbowSyntax
  */
