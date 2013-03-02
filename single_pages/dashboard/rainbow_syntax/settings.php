@@ -12,7 +12,7 @@
  */
 defined('C5_EXECUTE') or die('Access Denied.');
 ?>
-<?= $dh->getDashboardPaneHeaderWrapper(t('Rainbow Syntax Highlighter'), t('Set things for things'), false, false, false) ?>
+<?= $dh->getDashboardPaneHeaderWrapper(t('Rainbow Syntax Highlighter'), false, false, false, false) ?>
 
 <form method="post" action="<?= $this->url('/dashboard/rainbow_syntax/settings', 'update') ?>">
 
